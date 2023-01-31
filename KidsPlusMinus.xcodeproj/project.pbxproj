@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189E75FD29898D3F0079D82C /* NumbersForCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E75F729898D3F0079D82C /* NumbersForCount.swift */; };
+		189E75FE29898D3F0079D82C /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E75F829898D3F0079D82C /* DataStruct.swift */; };
+		189E75FF29898D3F0079D82C /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E75F929898D3F0079D82C /* AnswersView.swift */; };
+		189E760129898D3F0079D82C /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E75FB29898D3F0079D82C /* Background.swift */; };
+		189E760229898D3F0079D82C /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E75FC29898D3F0079D82C /* Operations.swift */; };
 		18FFC903298869AE0008F4C5 /* KidsPlusMinusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFC902298869AE0008F4C5 /* KidsPlusMinusApp.swift */; };
 		18FFC905298869AE0008F4C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFC904298869AE0008F4C5 /* ContentView.swift */; };
 		18FFC907298869AF0008F4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FFC906298869AF0008F4C5 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		189E75F729898D3F0079D82C /* NumbersForCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersForCount.swift; sourceTree = "<group>"; };
+		189E75F829898D3F0079D82C /* DataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
+		189E75F929898D3F0079D82C /* AnswersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
+		189E75FB29898D3F0079D82C /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		189E75FC29898D3F0079D82C /* Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		18FFC8FF298869AE0008F4C5 /* KidsPlusMinus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsPlusMinus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FFC902298869AE0008F4C5 /* KidsPlusMinusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsPlusMinusApp.swift; sourceTree = "<group>"; };
 		18FFC904298869AE0008F4C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +61,11 @@
 		18FFC901298869AE0008F4C5 /* KidsPlusMinus */ = {
 			isa = PBXGroup;
 			children = (
+				189E75F929898D3F0079D82C /* AnswersView.swift */,
+				189E75FB29898D3F0079D82C /* Background.swift */,
+				189E75F829898D3F0079D82C /* DataStruct.swift */,
+				189E75F729898D3F0079D82C /* NumbersForCount.swift */,
+				189E75FC29898D3F0079D82C /* Operations.swift */,
 				18FFC902298869AE0008F4C5 /* KidsPlusMinusApp.swift */,
 				18FFC904298869AE0008F4C5 /* ContentView.swift */,
 				18FFC906298869AF0008F4C5 /* Assets.xcassets */,
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FFC905298869AE0008F4C5 /* ContentView.swift in Sources */,
+				189E760129898D3F0079D82C /* Background.swift in Sources */,
+				189E75FD29898D3F0079D82C /* NumbersForCount.swift in Sources */,
+				189E75FE29898D3F0079D82C /* DataStruct.swift in Sources */,
 				18FFC903298869AE0008F4C5 /* KidsPlusMinusApp.swift in Sources */,
+				189E75FF29898D3F0079D82C /* AnswersView.swift in Sources */,
+				189E760229898D3F0079D82C /* Operations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

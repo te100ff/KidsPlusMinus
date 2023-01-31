@@ -81,12 +81,10 @@ struct NumbersData {
         
         operation = Operations.allCases.randomElement() ?? Operations.plus
         
-        switch operation {
-        case .plus:
-            rightAnswer = firstNumber + secondNumber
-        case .minus:
-            rightAnswer = firstNumber - secondNumber
-        }
+        rightAnswerCount(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)
+        wrongAnswerOne(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)
+        wrongAnswerTwo(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)
+        wrongAnswerThree(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)
         
     }
 }

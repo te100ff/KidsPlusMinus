@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct AnswersView: View {
-    let answers = [1, 2, 3, 4]
+    @State var data = NumbersData()
     
     var body: some View {
         HStack(alignment: .center) {
             Spacer()
-            ForEach(answers, id: \.self) { answer in
+            ForEach(data.answers, id: \.self) { answer in
                 Button("\(answer)") {
                     
                 }
@@ -23,9 +23,10 @@ struct AnswersView: View {
                 .font(.system(size: 45))
                 
                 
-                if answers.last != answer {
+                if data.answers.last != answer {
                     Spacer()
                 }
+                
             }
             
             
@@ -35,6 +36,9 @@ struct AnswersView: View {
         }
         .frame(minWidth: 0, maxWidth: .infinity)
         .padding()
+        .onAppear {
+            data.generateData()
+        }
         
     }
     

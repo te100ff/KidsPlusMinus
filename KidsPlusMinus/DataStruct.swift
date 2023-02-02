@@ -75,11 +75,30 @@ struct NumbersData {
         answers.append(answer)
     }
     
-    mutating func generateData() {
+    mutating func generateOperation() {
+        operation = Operations.allCases.randomElement() ?? Operations.plus
+    }
+    
+    mutating func generateNumbers() {
+        generateOperation()
+        
         firstNumber = Int.random(in: 1...10)
         secondNumber = Int.random(in: 1...10)
         
-        operation = Operations.allCases.randomElement() ?? Operations.plus
+        if operation == .plus && (firstNumber + secondNumber) >= 10 {
+            
+        }
+    }
+    
+    mutating func generateData() {
+        
+        generateNumbers()
+        generateOperation()
+        
+        
+            
+        
+        
         
         rightAnswerCount(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)
         wrongAnswerOne(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)

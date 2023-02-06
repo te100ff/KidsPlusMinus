@@ -80,25 +80,25 @@ struct NumbersData {
     }
     
     mutating func generateNumbers() {
-        generateOperation()
         
         firstNumber = Int.random(in: 1...10)
         secondNumber = Int.random(in: 1...10)
         
-        if operation == .plus && (firstNumber + secondNumber) >= 10 {
-            
-        }
     }
     
     mutating func generateData() {
         
-        generateNumbers()
         generateOperation()
-        
-        
-            
-        
-        
+
+        if operation == .plus {
+            repeat {
+                generateNumbers()
+            } while firstNumber + secondNumber <= 10
+        } else if operation == .minus {
+            repeat {
+                generateNumbers()
+            } while firstNumber - secondNumber >= 0
+        }
         
         rightAnswerCount(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)
         wrongAnswerOne(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)
